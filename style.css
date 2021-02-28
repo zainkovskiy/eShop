@@ -1,0 +1,206 @@
+body{
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3f3f3f;
+    padding: 15px 60px;
+}
+.logo{
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+.cart{
+    display: flex;
+    align-items: center;
+}
+.cart-block{
+    display: block;
+    position: absolute;
+    top: 88px;
+    right: 56px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent #3f3f3f #3f3f3f #3f3f3f;
+    border-radius: 5px;
+    min-height: 50px;
+    min-width: 250px;
+}
+.cart-block::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 10px 15px;
+    border-color: transparent transparent whitesmoke transparent;
+    right: 35px;
+    bottom: 100%;
+    position: absolute;
+}
+.invisible{
+    display: none;
+}
+.cart-item{
+    display: flex;
+    margin: 10px;
+}
+.right-block{
+    margin-left: 30px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+.del-btn{
+    color: whitesmoke;
+    font-size: 14px;
+    line-height: 23px;
+    background-color: #3f3f3f;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+.del-btn:hover{
+    background-color: whitesmoke;
+    color: #3f3f3f;
+    border: 1px solid #3f3f3f;
+}
+.del-btn:active{
+    background-color: #3f3f3f;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+.btn-cart{
+    color: #3f3f3f;
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    outline: none;
+    border-radius: 10px;
+    padding: 3px 15px;
+    border: 1px solid #3f3f3f;
+    box-sizing: border-box;
+    margin: 0 0 0 60px;
+}
+.btn-cart:hover{
+    background-color: #3f3f3f;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+.btn-cart:active{
+    background-color: whitesmoke;
+    color: #3f3f3f;
+    border: 1px solid #3f3f3f;
+}
+.search-field{
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid whitesmoke;
+    color: whitesmoke;
+    outline: none;
+}
+.btn-search{
+    background: none;
+    outline: none;
+    border: none;
+    color: whitesmoke;
+    transition: transform .3s;
+}
+.btn-search:hover{
+    transform: scale(0.8);
+}
+.btn-search:active{
+    transform: scale(1.2);
+}
+
+.buy-btn{
+    color: whitesmoke;
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    background-color: #3f3f3f;
+    outline: none;
+    border-radius: 10px;
+    padding: 3px 15px;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+.buy-btn:hover{
+    background-color: whitesmoke;
+    color: #3f3f3f;
+    border: 1px solid #3f3f3f;
+}
+.buy-btn:active{
+    background-color: #3f3f3f;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+.products{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px 0 60px 0;
+}
+
+.product-item{
+    border-radius: 5px;
+    border: 1px solid #3f3f3f;
+}
+.desk{
+    padding: 10px;
+}
+.form_send_wrap{
+    background-color: #3f3f3f;
+    width: 100%;
+    padding: 20px;
+}
+
+.form_send{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: 0 auto;
+}
+.input_send{
+    padding: 10px;
+    outline: none;
+    border: 1px solid #3f3f3f;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.input_send::placeholder{
+    font-family: sans-serif;
+    opacity: 0.5;
+}
+.form_send_bnt{
+    color: #3f3f3f;
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    outline: none;
+    border-radius: 10px;
+    padding: 3px 30px;
+    border: 1px solid #3f3f3f;
+    box-sizing: border-box;
+    align-self: center;
+    margin: 20px 0 0 0;
+}
+
+.form_send_bnt:hover{
+    background-color: #3f3f3f;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+.form_send_bnt:active{
+    background-color: whitesmoke;
+    color: #3f3f3f;
+    border: 1px solid #3f3f3f;
+}

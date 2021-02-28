@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Интернет магазин</title>
+</head>
+
+<body>
+    <header class="header">
+        <h3 class="logo">Интернет-магазин</h3>
+        <div class="cart">
+            <form action="#" class="search-form">
+                <input type="text" class="search-field">
+                <button class="btn-search" type="submit"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+            </form>
+            <button class="btn-cart" type="button">Корзина</button>
+            <div class="cart-block invisible"></div>
+        </div>
+    </header>
+    <main>
+        <div class="products"></div>
+        <div class="form_send_wrap">
+            <form class="form_send" name="form-send" action="#">
+                <input class="name input_send" name="name" type="text" placeholder="Your Name">
+                <input class="tel input_send" name="tel" type="tel" placeholder="+7(000)000-0000">
+                <input class="mail input_send" name="mail" type="email" placeholder="mail@mail.ru">
+                <textarea class="message input_send" name="form-massage" cols="30" rows="3"
+                    placeholder="Your Message"></textarea>
+                <button class="form_send_bnt" type="submit">submit</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
