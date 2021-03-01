@@ -212,7 +212,7 @@ class Form {
     constructor(form = '.form_send') {
         this.form = form;
         this.regExpName = /^[a-zA-Z]+$/;
-        this.regExpTel = /^\+[7][\(]\d{3}[\)]\d{3}-\d{4}/;
+        this.regExpTel = /^\+[7][\(]\d{3}[\)]\d{3}-\d{4}$/;
         this.regExpMail = /^[a-zA-Z]([a-zA-Z0-9_\-\.])+@mail.ru$/;
         this.formArr = [];
         this.setformArr();
